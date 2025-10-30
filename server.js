@@ -5,7 +5,24 @@ const twilio = require('twilio')
 const axios = require('axios')
 const fs = require('fs')
 
-fileContent = fs.readFileSync('./prompts.json')
+
+const name = document.getElementById('name')
+const phone_number = document.getElementById('number')
+const reason = document.getElementById('reason')
+const character = document.getElementById('character')
+
+
+
+
+
+
+
+
+
+
+
+
+fileContent = fs.readFileSync('./prompts_final.json')
 
 dotenv.config()
 
@@ -23,6 +40,7 @@ app.post('/', async (req, res) => {
     const { name, phone_number, reason, character } = req.body
 
     const character_info = JSON.parse(fileContent)[character]
+    console.log(character_info)
 
     const account_sid = process.env.TWILIO_ACCOUNT_SID
     const auth_token = process.env.TWILIO_AUTH_TOKEN
