@@ -6,10 +6,6 @@ const axios = require('axios')
 const fs = require('fs')
 
 
-const name = document.getElementById('name')
-const phone_number = document.getElementById('number')
-const reason = document.getElementById('reason')
-const character = document.getElementById('character')
 
 
 
