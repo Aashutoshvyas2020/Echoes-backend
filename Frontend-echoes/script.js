@@ -169,12 +169,13 @@ async function MakeCall(url, username, phone_number, reason, character) {
 
 button.addEventListener('click', () =>{
 
-    MakeCall("https://echoes-backend-z2sf.onrender.com",name1.value, phone_number.value, reason.value, character.value).then(data => 
+    MakeCall("https://HOSTINGPLATFORM",name1.value, phone_number.value, reason.value, character.value).then(data => 
     {
     console.log(data)
     })
     
 })
+
 
 
 
