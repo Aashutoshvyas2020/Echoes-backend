@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes</title>
+</head>
+<body>
+    <video id="bg-video" src="Untitled video - Made with Clipchamp (1).mp4" autoplay loop muted playsinline></video>
+    <div class="inputtile" id="holdingtile">
+        
+        <input type="text" id="name" placeholder="Amanda Smith" autocomplete="off">
+        <div class="phone">
+              <input id="number" name="number" placeholder="+1 (123) 456-7890">
+        </div>
+        <input type="text" id="reason" placeholder="The future of AI" autocomplete="off">
+        
+        
+        <select class="input" id="character">
+            <option value="" disabled selected>Select a voice</option>
+            <option value="Mahatma Gandhi">Mahatma Gandhi</option>
+            <option value="Abraham Lincoln">Abraham Lincoln</option>
+            <option value="John F. Kennedy">John F. Kennedy</option>
+            <option value="Steve Jobs">Steve Jobs</option>
+            <option value="Albert Einstein">Albert Einstein</option>
+        </select>
+
+        <button id="enter">Call</button>
+        
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
